@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <style>
+  *{
+font-family: Century Gothic;
+}
+ul{
+float:right;
+list-style-type:none;
+margin-top:25px;
+}
+ul li{
+display: inline-block;
+}
+ul li a{
+text decoration:none;
+color:#4d4b72;
+padding:5px 20px;
+border: 1px solid ##4d4b72;
+transition:0.4s ease;
+}
+ul li a:hover{
+background-color:#fff ;
+color:##4d4b72;
+}
+form{
+margin-left:500px;
+margin-top:200px;
+width: 300px;
+transition:0.4s ease;
+}
+input{
+padding:10px;
+width: 300px;
+}
+input:hover{
+background-color: #fff;
+color:#000;
+input,submit:hover{
+background-color: #f0f;
+color:#fff;
+}
+.about{
+	position:absolute;
+	top:30%;
+	left:20%;
+	transform:translate(-50%);
+}	
+}
+footer{
+margin-top:200px;
+}
+</style>
+</head>
+<body bgcolor="#ECE2D0">
+<header>
+        <h1>Vacuum Cleaner Store</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="cart.html">cart</a></li>
+                <li><a href="#">payments</a></li>
+            </ul>
+        </nav>
+    </header><br><br><br><br><br>
+	<div>
+<center>
+<h1>PRODUCTS</h1>
+ <section class="products">
+        <article class="product">
+            <img src="IMAGE 1.jpeg" alt="Vacuum Cleaner Model 1">
+            <h2>Vacuum Cleaner Model 1</h2>
+            <p>High-powered vacuum with advanced filtration system.</p>
+            <p class="price">$199.99</p>
+            <button type="submit" formaction="cart.html">Add to Cart</button>
+        </article>
+        <article class="product">
+            <img src="image 2.jpeg" alt="Vacuum Cleaner Model 2">
+            <h2>Vacuum Cleaner Model 2</h2>
+            <p>Compact and lightweight vacuum for everyday cleaning.</p>
+            <p class="price">$149.99</p>
+            <a herf="cart.html"> 
+			<button>add to cart</button>
+			</a>
+        </article>
+    </section>
+</div>
+    <footer>
+        <p>&copy; 2023 Vacuum Cleaner Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>

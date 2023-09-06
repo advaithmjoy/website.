@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Shopping Cart</title>
+<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<script type="text/javascript" src="jquery.store.js"></script>
+  <style>
+  *{
+font-family: Century Gothic;
+}
+ul{
+float:right;
+list-style-type:none;
+margin-top:25px;
+}
+ul li{
+display: inline-block;
+}
+ul li a{
+text decoration:none;
+color:#4d4b72;
+padding:5px 20px;
+border: 1px solid ##4d4b72;
+transition:0.4s ease;
+}
+ul li a:hover{
+background-color:#fff ;
+color:##4d4b72;
+}
+form{
+margin-left:500px;
+margin-top:200px;
+width: 300px;
+transition:0.4s ease;
+}
+input{
+padding:10px;
+width: 300px;
+}
+input:hover{
+background-color: #fff;
+color:#000;
+input,submit:hover{
+background-color: #f0f;
+color:#fff;
+}
+.about{
+	position:absolute;
+	top:30%;
+	left:20%;
+	transform:translate(-50%);
+}	
+}
+footer{
+margin-top:200px;
+}
+</style>
+</head>
+
+<body bgcolor="#ECE2D0">
+
+<div id="site">
+	<header id="masthead">
+		<h1></h1>
+	</header>
+	<div id="content">
+		<h1>Your Shopping Cart</h1>
+		<form id="shopping-cart" action="cart.html" method="post">
+			<table class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col" colspan="2">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+			<p id="sub-total">
+				<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+		<strong>Sub Total</strong>: <span id="stotal"></span>
+			</p>
+			<ul id="shopping-cart-actions">
+				<li>
+					<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+				</li>
+				<li>
+					<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+				</li><br><br>
+				<li>
+					<a href="product.html" class="btn">Continue Shopping</a>
+				</li><br><br>
+				<li>
+					<a href="checkout.html" class="btn">Go To Checkout</a>
+				</li>
+			</ul>
+		</form>
+	</div>
+	
+	
+
+</div>
+
+<footer>
+  <p>&copy; 2023 Vacuum Cleaner Store. All rights reserved.</p>
+	</footer>
+
+</body>
+</html>	
